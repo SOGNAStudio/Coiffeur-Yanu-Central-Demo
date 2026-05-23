@@ -1243,3 +1243,11 @@ html, body {
   background: var(--ink) !important;
 }
 
+
+
+
+@media (max-width: 480px) {
+  .hero-image {
+    display: none !important;
+  }
+}
