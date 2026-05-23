@@ -1246,8 +1246,25 @@ html, body {
 
 
 
-@media (max-width: 480px) {
-  .hero-image {
-    display: none !important;
+/* ── HANDY FIX: Hero wie Blanc ── */
+@media (max-width: 640px) {
+  /* Bild kleiner, zentriert, überschreibt nichts */
+  .hero-editorial .hero-portrait-wrap {
+    order: -1;
+    text-align: center;
+  }
+  .hero-editorial .hero-portrait-circle {
+    width: min(260px, 75%) !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Stats zweireihig */
+  .hero-bar {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    flex-wrap: unset;
+    gap: 1.2rem !important;
+    max-width: 100% !important;
   }
 }
